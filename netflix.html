@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="stylenetflix1.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo"></div>
+      <img class="nav__logo" src="netflix.jpeg" alt="" />
+      <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">TV Shows</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">New and Popular</a></li>
+              <li><a href="#">My List</a></li>
+              <li><a href="#">Browse by languages</a></li>
+          </ul>
+      </nav>
+  </header>
+
+    <!-- header -->
+    <header class="nf">
+      <div class="main">
+        <h1 class="heading">Demon Slayer</h1>
+        <div class="banner__buttons">
+          <button class="head_button">Play</button>
+          <button class="head_button">More Info</button>
+        </div>
+        <h1 class="head_desc">
+            After a demon attack leaves his family slain and his sister cursed, Tanjiro embarks upon a perilous journey to find a cure and avenge those he's lost.
+        </h1>
+
+      </div>
+      <div class="head_fade"></div>
+    </header>
+
+    <!-- Trending Now -->
+    <div class="part">
+      <h2>Trending Now</h2>
+      <div class="part_div">
+        <img class="part__poster" src="boys over flowers.jpeg" alt="" />
+
+        <img class="part__poster" src="jawan.jpeg" alt="" />
+
+        <img class="part__poster" src="MAD.jpeg" alt="" />
+
+        <img class="part__poster" src="Irugapatru.jpg" alt="" />
+
+        <img class="part__poster" src="my id is gangnam beauty.jpeg" alt="" />
+
+        <img class="part__poster" src="never have I ever.jpeg" alt="" />        
+      </div>
+    </div>
+
+    <!-- Anime -->
+    <div class="part">
+      <h2>Anime</h2>
+      <div class="part_div">
+        <img class="part__poster" src="fruits basket.jpeg" alt="" />
+
+        <img class="part__poster" src="naruto.jpeg" alt="" />
+
+        <img class="part__poster" src="spyxfamily.jpeg" alt="" />
+
+        <img class="part__poster" src="jujutsu kaisen.jpg" alt="" />
+
+        <img class="part__poster" src="my happy marriage.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Made In India -->
+    <div class="part">
+      <h2>Made In India</h2>
+      <div class="part_div">
+        <img class="part__poster" src="miss shetty.jpg" alt="" />
+
+        <img class="part__poster" src="yeh-jawaani-hai-deewani-1-sixteen_nine.webp" alt="" />
+
+        <img class="part__poster" src="kuch-kuch-hota-hai_767x430.jpg" alt="" />
+
+        <img class="part__poster" src="hey.jpeg" alt="" />
+
+        <img class="part__poster" src="Shyam-Singha-Roy.jpg" alt="" />
+
+      </div>
+    </div>
+
+
+    <script>
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add('nav__black');
+        } else {
+          nav.classList.remove('nav__black');
+        }
+      });
+    </script>
+  </body>
+</html>
